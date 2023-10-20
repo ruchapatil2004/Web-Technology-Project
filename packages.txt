@@ -1,0 +1,5 @@
+Packages to be downloaded before running the code:- 
+
+npm install mongoose
+npm install experess
+npm init -y
