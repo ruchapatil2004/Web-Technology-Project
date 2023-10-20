@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Page</title>
+    <script src="./app.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #026ceec7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #08088d;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 5px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .content-section {
+            background-color: #82b0e8c7;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 24px;
+            color: #050404;
+            margin-bottom: 20px;
+        }
+
+        .contact-section {
+            background-image: url("wet2.jpg");
+            background-size: cover;
+            color: #03003e;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact-form h2 {
+            font-size: 24px;
+        }
+
+        label, input, textarea {
+            display: block;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        input, textarea {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #08088d;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #06179a;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li style="font-size: 25px;"><a href="#home">Home</a></li>
+                <li style="font-size: 25px;"><a href="#about">About</a></li>
+                <li style="font-size: 25px;"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contact" class="contact-section">
+        <div class="hero">
+            <h1>Welcome to Our Weather Forecast Website</h1>
+            <p><h2>Your journey begins here!</h2></p>
+            <br><br><br>
+        </div>
+        <div class="contact-form">
+            <h1 style="font-size:25px;">Contact Us</h1>
+            <form action="/" method="post">
+                <label for="name" style="font-size:25px;">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email" style="font-size:25px;">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message" style="font-size:25px;">Message:</label>
+                <input id="message" name="message" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+        <div class="content">
+            <h2>About Us</h2>
+            <p>Welcome to WeatherNow, your go-to source for accurate and up-to-date weather information. We are dedicated to keeping you informed about the ever-changing conditions in your area and around the world. At WeatherNow, our mission is to provide you with the most reliable and comprehensive weather forecasts, so you can plan your day with confidence. We believe that accurate weather information is essential for making informed decisions and staying safe.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 WeatherNow. All rights reserved.</p>
+    </footer>
+</body>
+</html>
